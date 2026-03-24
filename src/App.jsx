@@ -36,6 +36,11 @@ function App() {
           placeholder="Write a new note..."
           value={noteText}
           onChange={(e) => setNoteText(e.target.value)}
+          onKeyDown={(e) => {
+            if (e.key === "Enter") {
+              handleAddNote();
+            }
+          }}
         />
         <button onClick={handleAddNote}>Add Note</button>
       </div>
