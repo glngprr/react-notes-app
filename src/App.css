@@ -111,14 +111,11 @@ button:active {
   border-left-color: #646cff;
 }
 
-/* Update note-item yang lama jadi begini: */
-
 .note-item:hover {
   transform: translateX(3px);
   border-left-color: #646cff;
 }
 
-/* Style buat tombol Delete */
 .delete-btn {
   background-color: transparent;
   color: #ff4a4a; /* Merah alert */
@@ -132,7 +129,6 @@ button:active {
   color: white;
 }
 
-/* --- Responsive Mobile Tweaks (FIXED) --- */
 @media (max-width: 600px) {
   .app-container {
     padding: 1rem;
@@ -147,17 +143,15 @@ button:active {
     flex-direction: column;
   }
 
-  /* 👇 FIX DI SINI: Targetin spesifik tombol di input-section aja 👇 */
   .input-section button {
-    width: 100%; /* Tombol 'Add Note' tetep full width */
+    width: 100%;
     padding: 14px;
   }
 
-  /* 👇 Tambahin ini biar tombol delete-nya tetep imut di HP 👇 */
   .delete-btn {
-    width: auto; /* Balikin lebarnya jadi otomatis sesuai teks 'X' */
-    padding: 6px 12px; /* Pake padding kecil yang awal */
-    margin-left: 10px; /* Kasih jarak dikit sama teks note */
+    width: auto;
+    padding: 6px 12px;
+    margin-left: 10px;
   }
 }
 
